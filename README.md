@@ -21,8 +21,9 @@ MailHog is an email testing tool for developers:
 ### Installation
 
 #### Manual installation
-[Download the latest release for your platform](/docs/RELEASES.md). Then
-[read the deployment guide](/docs/DEPLOY.md) for deployment options.
+[Download the latest release for your platform](/docs/RELEASES.md). On that page will be each release. Click on the release number (such as [for 1.0](https://github.com/mailhog/MailHog/releases/v1.0.0)), and there you will see first that version's release notes followed by a list of installers/binaries for each supported platform. 
+
+Then [read the deployment guide](/docs/DEPLOY.md) for deployment options.
 
 #### MacOS
 ```bash
@@ -57,6 +58,10 @@ pkg install mailhog
 sysrc mailhog_enable="YES"
 service mailhog start
 ```
+
+#### Windows
+
+Download the .exe offered (for 64-bit or 32-bit/386) at the download page above. Run the exe directly (a command window will open), or open a command prompt/powershell terminal and then `cd` to the folder where you downloaded or placed the exe, to start MailHog by running `mailhog` at that terminal). Either way, to end mailhog, close the window or click ctrl-c.
 
 #### Docker
 [Run it from Docker Hub](https://registry.hub.docker.com/r/mailhog/mailhog/) or using the provided [Dockerfile](Dockerfile)
